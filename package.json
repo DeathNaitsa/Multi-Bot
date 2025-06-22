@@ -1,0 +1,46 @@
+{
+  "name": "modular-bot",
+  "version": "1.0.0",
+  "description": "Modularer plattformunabhängiger Bot mit dateibasierter User- und Chat-DB",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "db:list-users": "node database.js list users",
+    "db:view-user": "node database.js view user",
+    "db:del-user": "node database.js delete user",
+    "db:list-chats": "node database.js list chats",
+    "db:view-chat": "node database.js view chat",
+    "db:del-chat": "node database.js delete chat"
+  },
+  "dependencies": {
+    "@deathnaitsa/baileys": "^1.0.18",
+    "@deathnaitsa/wa-api": "^1.0.41",
+    "@discordjs/voice": "^0.18.0",
+    "@neelegirl/downloader": "^0.1.62",
+    "body-parser": "^2.2.0",
+    "debug": "^4.4.1",
+    "discord.js": "^14.19.3",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "mathjs": "^14.5.2",
+    "node-cache": "^5.1.2",
+    "node-fetch": "^3.3.2",
+    "node-telegram-bot-api": "^0.66.0",
+    "qrcode": "^1.5.4",
+    "yt-search": "^2.13.1"
+  },
+  "devDependencies": {
+    "moon": "^1.0.0-beta.7",
+    "nodemon": "^3.1.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DeathNaitsa/Multi-Bot.git"
+  },
+  "homepage": "https://github.com/DeathNaitsa/Multi-Bot#readme",
+  "bugs": {
+    "url": "https://github.com/DeathNaitsa/Multi-Bot/issues"
+  }
+}

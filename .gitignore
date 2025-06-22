@@ -1,0 +1,5 @@
+database.json
+node_modules
+.env
+db/users
+db/chats
