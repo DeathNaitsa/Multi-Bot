@@ -73,7 +73,7 @@ async function handleIncoming(m, send) {
   }
 
   // Wenn es kein Command ist (kein Präfix), brauchen wir nichts weiter tun:
-  const prefix = '!';
+  const prefix = process.env.PREFIX || '!';
   if (!m.text.startsWith(prefix)) return;
 
   // 2b) Command‐Name und Argumente extrahieren
